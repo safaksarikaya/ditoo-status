@@ -1,0 +1,4 @@
+#!/bin/sh
+# Talk to the running Ditoo Status app: ./dev/ditoo send 23 01 | show clock | status | reload
+# Prints the reply plus anything the Ditoo sends back within a second.
+printf '%s\n' "$*" | nc -w 1 127.0.0.1 40404
