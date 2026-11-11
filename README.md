@@ -95,7 +95,16 @@ The key lights on stock firmware only understand `23 00` (previous effect), `23 
 - **Clawd**, the Claude Code mascot drawn here in pixels, is Anthropic's character. This project is not
   affiliated with or endorsed by Anthropic.
 - Divoom and Ditoo are trademarks of Divoom. This project is not affiliated with Divoom.
-- The protocol framing follows community reverse-engineering of Divoom devices.
+- The protocol comes from community reverse engineering. This project reimplements it in Swift; no code
+  from these projects is included.
+  - [hass-divoom](https://github.com/d03n3rfr1tz3/hass-divoom) by d03n3rfr1tz3: framing, image and
+    animation upload, channels, clock, brightness and the Ditoo key-light command.
+  - [node-divoom-timebox-evo](https://github.com/RomRider/node-divoom-timebox-evo) by RomRider: the
+    image encoding (palette plus packed pixel bits).
+  - [ditoo-pro-custom-firmware](https://github.com/mert4x4/ditoo-pro-custom-firmware) by mert4x4,
+    [divoom-ditoo-pro-controller](https://github.com/futpib/divoom-ditoo-pro-controller) by futpib and
+    [pixelbox](https://github.com/dend/pixelbox) by dend: command catalogues used to check what the
+    key lights support.
 
 ## License
 
